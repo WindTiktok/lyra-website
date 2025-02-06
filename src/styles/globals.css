@@ -2,6 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes infinite-scrolldown {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50vw);
+  }
+}
+
+@keyframes infinite-scrollup {
+  0% {
+    transform: translateX(-50vw);
+  }  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-infinite-scrolldown {
+  animation: infinite-scrolldown 30s linear infinite;
+}
+
+.animate-infinite-scrollup {
+  animation: infinite-scrollup 30s linear infinite;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
