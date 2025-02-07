@@ -1,17 +1,22 @@
 import Head from 'next/head';
 import Navbar from '../components/Navbar';
 import HeroSlider from '../components/HeroSlider';
+import { HeroContainer } from '../components/Container';
 
 const Home = () => {  return (
     <div className="bg-black">
       <Head>
-        <title>LYRA AI</title>
-        <meta name="description" content="elizaOS - The Operating System for AI Agents" />
+        <title>LYRA AI - The Operating System for AI Agents</title>
+        <meta name="description" content="LYRA AI - The Operating System for AI Agents" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Navbar />
-      <HeroSlider />
+      <Navbar variant="home" />
+      <div className="relative z-10">
+        <HeroContainer>
+          <p className="text-white text-7xl font-bold">LYRA AI</p>
+        </HeroContainer>
+        <HeroSlider />
+      </div>
     </div>
   );
 };

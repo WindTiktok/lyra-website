@@ -1,0 +1,12 @@
+/* 通用页面容器样式 */
+.pageContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .pageContainer {
+    padding: 0 1rem;
+  }
+} 
