@@ -16,7 +16,7 @@ export default function Navbar({ variant }) {
                 <img src="/globe.svg" className="h-20 w-20 hover:rotate-12 transition-transform" alt="Framework" />
                 <span className="text-sm font-medium">Framework</span>
               </Link>
-              <Link href="/dao" className="text-white/70 hover:text-white transition-colors duration-300 flex flex-col items-center gap-1 hover:scale-105 transform-gpu">
+              <Link href="/technology" className="text-white/70 hover:text-white transition-colors duration-300 flex flex-col items-center gap-1 hover:scale-105 transform-gpu">
                 <img src="/file.svg" className="h-20 w-20 hover:rotate-12 transition-transform" alt="Technology" />
                 <span className="text-sm font-medium">Technology</span>
               </Link>
