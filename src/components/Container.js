@@ -1,7 +1,7 @@
 export function HeroContainer({ children }) {
   return (
     <div className="fixed top-[110px] left-0 w-full px-4 text-center bg-transparent text-xl z-10">
-      <div className="max-w-[1200px] mx-auto px-4 md:px-6">
+      <div className="max-w-5xl mx-auto px-4 md:px-6">
         {children}
       </div>
     </div>
@@ -9,7 +9,7 @@ export function HeroContainer({ children }) {
 }
 
 export function PageContainer({ children }) {
-  return <div className="max-w-[1200px] mx-auto px-4 md:px-6">{children}</div>
+  return <div className="max-w-5xl mx-auto px-4 md:px-6">{children}</div>
 }
 
 export default function Container({ children }) {

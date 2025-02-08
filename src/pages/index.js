@@ -4,7 +4,10 @@ import HeroSlider from '../components/HeroSlider';
 import { HeroContainer } from '../components/Container';
 
 const Home = () => {  return (
-    <div className="bg-black">
+    <div className="relative min-h-screen">
+      <div className="background-overlay">
+        <div className="background-image"></div>
+      </div>
       <Head>
         <title>LYRA AI - The Operating System for AI Agents</title>
         <meta name="description" content="LYRA AI - The Operating System for AI Agents" />

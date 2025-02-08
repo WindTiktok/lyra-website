@@ -1,6 +1,6 @@
 export default function HeroSlider() {
   return (
-    <div className="relative min-h-screen w-full bg-black overflow-x-hidden">
+    <div className="relative min-h-screen w-full overflow-x-hidden">
       {/* Purple Gradient Background */}
       <div className="absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-600/20 via-transparent to-transparent" />
       
