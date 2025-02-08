@@ -39,7 +39,30 @@ export default function Navbar({ variant }) {
       </nav>
     )
   }
-
+  // technology
+  if (variant === 'technology') {
+    return (
+      <nav className="fixed top-0 w-full bg-white/5 backdrop-blur-md border-b border-white/10 z-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <div className="flex items-center justify-between">
+          <Link href="/" className="text-xl font-bold">
+            LYRA AI
+          </Link>
+          <div className="flex space-x-6 items-center">
+            <div className="flex gap-4">
+              <a href="https://x.com/LYRA_AI1" target="_blank" className="p-1.5 hover:rounded-2xl hover:bg-black/20 transition-all duration-300">
+                Twitter
+              </a>
+              <a href="https://github.com/elizaOS" target="_blank" className="p-1.5 hover:rounded-2xl hover:bg-black/20 transition-all duration-300"> 
+                Github
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav> 
+    )
+  }
   // Framework页样式
   return (
     <nav className="fixed top-0 w-full bg-white/5 backdrop-blur-md border-b border-white/10 z-50">
@@ -51,10 +74,10 @@ export default function Navbar({ variant }) {
           
           <div className="flex space-x-6 items-center">
             <div className="flex space-x-4 ml-4">
-              <a href="https://x.com/LYRA_AI1" target="_blank" className="p-2 text-white hover:text-white rounded-lg hover:bg-white/10 transition-colors">
+              <a href="https://x.com/LYRA_AI1" target="_blank" className="p-2 text-white hover:text-white rounded-2xl hover:bg-white/20 transition-colors">
                 Twitter
               </a>
-              <a href="https://github.com/elizaOS" target="_blank" className="p-2 text-white hover:text-white rounded-lg hover:bg-white/10 transition-colors">
+              <a href="https://github.com/elizaOS" target="_blank" className="p-2 text-white hover:text-white rounded-2xl hover:bg-white/20 transition-colors">
                 Github
               </a>
             </div>
